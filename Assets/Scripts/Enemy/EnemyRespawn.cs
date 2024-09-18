@@ -1,3 +1,4 @@
+using Assets.Scripts.Models;
 using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -15,7 +16,6 @@ namespace Assets.Scripts
 
         void Start()
         {
-            Time.timeScale = 1.0f;
             StartCoroutine("Respawn", 1.0f);
         }
 
@@ -37,7 +37,7 @@ namespace Assets.Scripts
         void Update()
         {
             if (!_coroutine)
-                StartCoroutine("Respawn", 3.0f); 
+                StartCoroutine("Respawn", GameModel.instance.timeRespawnEnemy); 
         }
     }
 }

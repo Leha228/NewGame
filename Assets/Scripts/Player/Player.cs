@@ -23,8 +23,13 @@ namespace Assets.Scripts
 
         private void OnCollisionEnter2D(Collision2D collision)
         {
-            if (collision.gameObject.CompareTag(GameModel.singleton.ground)) 
-                _isGround = true; 
+
+            if (collision.gameObject.CompareTag(GameModel.instance.ground)) 
+                _isGround = true;
+            else if (collision.gameObject.CompareTag(GameModel.instance.destroy))
+                GameController.instance.StopGame();
+            else
+                Debug.Log("New collision to Player: " + collision.gameObject.tag);
         }
 
         private void Jump()
@@ -32,7 +37,7 @@ namespace Assets.Scripts
 
             if (Input.GetKeyDown(KeyCode.Space) && _isGround)
             {
-                _rb.linearVelocity = new Vector2(_rb.linearVelocity.x, GameModel.singleton.jumpForcePlayer);
+                _rb.linearVelocity = new Vector2(_rb.linearVelocity.x, GameModel.instance.jumpForcePlayer);
                 _isGround = false;
             }
         }

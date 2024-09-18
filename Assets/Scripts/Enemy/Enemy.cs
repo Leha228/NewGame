@@ -25,7 +25,7 @@ namespace Assets.Scripts
 
         private void Run()
         {
-            _rb.linearVelocity = new Vector2(GameModel.singleton.speedEnemy, _rb.linearVelocity.y);
+            _rb.linearVelocity = new Vector2(GameModel.instance.speedEnemy, _rb.linearVelocity.y);
         }
     }
 }

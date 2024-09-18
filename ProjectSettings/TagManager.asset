@@ -8,6 +8,7 @@ TagManager:
   - UI
   - Earth
   - Destroy
+  - Score
   layers:
   - Default
   - TransparentFX

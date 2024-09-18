@@ -9,7 +9,7 @@ namespace Assets.Scripts
 
         private void OnCollisionEnter2D(Collision2D collision)
         {
-            if (collision.gameObject.CompareTag(GameModel.singleton.destroy))
+            if (collision.gameObject.CompareTag(GameModel.instance.destroy))
             {
                 Destroy(collision.gameObject);
             }

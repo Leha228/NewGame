@@ -5,7 +5,7 @@ namespace Assets.Scripts.Models
 {
     public class GameModel : MonoBehaviour
     {
-        public static GameModel singleton { get; private set; }
+        public static GameModel instance { get; set; }
 
         [SerializeField]
         public float jumpForcePlayer;
@@ -14,12 +14,18 @@ namespace Assets.Scripts.Models
         [SerializeField]
         public string ground;
         [SerializeField]
-        public string destroy; 
+        public string destroy;
+        [SerializeField]
+        public float timeRespawnEnemy;
+        [SerializeField]
+        public int score;
+        [SerializeField]
+        public float timeScale;
 
 
         private void Awake()
         {
-            singleton = this;
+            instance = this;
         }
     }
 }
