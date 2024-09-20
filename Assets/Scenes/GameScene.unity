@@ -673,7 +673,7 @@ RectTransform:
   m_GameObject: {fileID: 711222923}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0.19195515}
-  m_LocalScale: {x: 2, y: 1, z: 1}
+  m_LocalScale: {x: 55.32304, y: 30.096, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 249756476}
@@ -681,7 +681,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -400, y: -171.6}
+  m_AnchoredPosition: {x: -25, y: -2}
   m_SizeDelta: {x: 10, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &711222927
@@ -1189,15 +1189,15 @@ RectTransform:
   m_GameObject: {fileID: 1703504988}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1.08, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1362127270}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.7908672, y: 0.8314486}
-  m_AnchorMax: {x: 0.869, y: 1}
-  m_AnchoredPosition: {x: 83, y: -6}
-  m_SizeDelta: {x: 120, y: -24}
+  m_AnchorMin: {x: 0.81000006, y: 0.82437855}
+  m_AnchorMax: {x: 0.957, y: 0.9793786}
+  m_AnchoredPosition: {x: 0.12030029, y: -1.1054077}
+  m_SizeDelta: {x: 1.4934006, y: -4.3231}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1703504990
 MonoBehaviour:
@@ -1253,7 +1253,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 4
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -1284,7 +1284,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 156.60127, w: 0}
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1453,9 +1453,11 @@ MonoBehaviour:
   speedEnemy: -100
   ground: Earth
   destroy: Destroy
-  timeRespawnEnemy: 5
+  timeRespawnEnemy: 6
+  timeRespawnEnemyCoff: 4
   score: 1
   timeScale: 2
+  timeScaleCoff: 0.001
 --- !u!114 &1724847168
 MonoBehaviour:
   m_ObjectHideFlags: 0

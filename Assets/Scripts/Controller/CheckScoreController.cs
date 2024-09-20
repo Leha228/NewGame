@@ -25,12 +25,5 @@ namespace Assets.Scripts
             checkScore += Time.timeScale / 40;
             textMesh.text = Convert.ToInt32(checkScore).ToString();
         }
-
-        /*private void OnTriggerEnter2D(UnityEngine.Collider2D collision)
-        {
-            if (collision.gameObject.CompareTag(GameModel.instance.destroy))
-                textMesh.text = (GameModel.instance.score + Convert.ToInt32(textMesh.text)).ToString();
-        }*/
-
     }
 }

@@ -8,19 +8,31 @@ namespace Assets.Scripts.Models
         public static GameModel instance { get; set; }
 
         [SerializeField]
-        public float jumpForcePlayer;
+        public float jumpForcePlayer; // сила прыжка героя
+
         [SerializeField]
-        public float speedEnemy;
+        public float speedEnemy; // скорость врага
+
         [SerializeField]
-        public string ground;
+        public string ground; // Тег террейна
+
         [SerializeField]
-        public string destroy;
+        public string destroy; // Тег обьекта, при котором герой проигрывает
+
         [SerializeField]
-        public float timeRespawnEnemy;
+        public float timeRespawnEnemy; // время спавна врага, начальное
+
         [SerializeField]
-        public int score;
+        public float timeRespawnEnemyCoff; // коэффициент рандома для респавна
+
         [SerializeField]
-        public float timeScale;
+        public int score; // начальное число очков
+
+        [SerializeField]
+        public float timeScale; // начальное время при старте игры
+
+        [SerializeField]
+        public float timeScaleCoff; // коэффициент прироста скорости игры 
 
 
         private void Awake()

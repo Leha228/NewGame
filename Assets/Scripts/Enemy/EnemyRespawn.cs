@@ -37,7 +37,7 @@ namespace Assets.Scripts
         void Update()
         {
             if (!_coroutine)
-                StartCoroutine("Respawn", GameModel.instance.timeRespawnEnemy); 
+                StartCoroutine("Respawn", GameController.instance.EditTimeRespawnEnemy());
         }
     }
 }
